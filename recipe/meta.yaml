@@ -1,5 +1,5 @@
 {% set name = "types-tabulate" %}
-{% set version = "0.1.1" %}
+{% set version = "0.8.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/types-tabulate-{{ version }}.tar.gz
-  sha256: d1a415a8601391bc8450a669402ad57a1b620acf8d8d206fcbb3accc1440b106
+  sha256: c63e90bec13837c46e0b3d91f89fd19d858f21b3df51ff32577a8efa70628a64
 
 build:
   number: 0
