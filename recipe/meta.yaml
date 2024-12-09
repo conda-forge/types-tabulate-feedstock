@@ -18,12 +18,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - pip
+    - python {{ python_min }}
   commands:
+    - pip check
     - test -f $SP_DIR/tabulate-stubs/__init__.pyi
 
 
